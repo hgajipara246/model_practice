@@ -19,7 +19,7 @@ class _ModelFirstScreenState extends State<ModelFirstScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFFFFFF),
+      backgroundColor: const Color(0xFFFFFFFF),
       appBar: AppBar(
         elevation: 0,
         iconTheme: const IconThemeData(color: UiColor.commonColor),
@@ -30,9 +30,9 @@ class _ModelFirstScreenState extends State<ModelFirstScreen> {
               UiImage.appbarimage,
               height: 40,
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: const Text(
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Text(
                 AppString.appbartitle,
                 style: TextStyle(
                   color: UiColor.textcolor,
@@ -59,7 +59,7 @@ class _ModelFirstScreenState extends State<ModelFirstScreen> {
                 ),
               ),
               ListView.builder(
-                physics: NeverScrollableScrollPhysics(),
+                physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
                 itemCount: successStoriesModel!.storyList!.length,
                 itemBuilder: (context, index) => Padding(
@@ -74,7 +74,7 @@ class _ModelFirstScreenState extends State<ModelFirstScreen> {
                           blurRadius: 20,
                         ),
                         BoxShadow(
-                          color: Color(0x8101828),
+                          color: Color(0x13101828),
                           offset: Offset(0, 4),
                           blurRadius: 20,
                         ),
@@ -90,12 +90,12 @@ class _ModelFirstScreenState extends State<ModelFirstScreen> {
                               "${successStoriesModel!.storyList![index].image}",
                             ),
                           ),
-                          SizedBox(height: 8),
+                          const SizedBox(height: 8),
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 15.0),
                             child: Text(
                               "${successStoriesModel!.storyList![index].information}",
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: Color(0xFF101828),
                                 fontSize: 13,
                                 fontFamily: "Inter",
@@ -104,12 +104,12 @@ class _ModelFirstScreenState extends State<ModelFirstScreen> {
                               textAlign: TextAlign.center,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 12,
                           ),
                           Text(
                             "${successStoriesModel!.storyList![index].year}",
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontWeight: FontWeight.w400,
                               fontSize: 24,
                               fontFamily: "Inter",
@@ -122,7 +122,7 @@ class _ModelFirstScreenState extends State<ModelFirstScreen> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Container(
@@ -205,7 +205,7 @@ class _ModelFirstScreenState extends State<ModelFirstScreen> {
                           color: Color(0xFF667085),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 35,
                       ),
                       AppRow.CompanyDetails,
@@ -215,8 +215,8 @@ class _ModelFirstScreenState extends State<ModelFirstScreen> {
               ),
               Container(
                 width: double.infinity,
-                decoration: BoxDecoration(
-                  color: Color(0xD2B11EB),
+                decoration: const BoxDecoration(
+                  color: Color(0x0d2b11eb),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(25.0),
@@ -224,7 +224,7 @@ class _ModelFirstScreenState extends State<ModelFirstScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         AppString.copyright,
                         style: TextStyle(
                           fontWeight: FontWeight.w400,
@@ -233,17 +233,17 @@ class _ModelFirstScreenState extends State<ModelFirstScreen> {
                           color: Color(0xFF98A2B3),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 35,
                       ),
                       Row(
                         children: [
                           AppIcons.twitter,
-                          SizedBox(width: 20),
+                          const SizedBox(width: 20),
                           AppIcons.linkedin,
-                          SizedBox(width: 20),
+                          const SizedBox(width: 20),
                           AppIcons.facebook,
-                          SizedBox(width: 20),
+                          const SizedBox(width: 20),
                           AppIcons.instagram,
                         ],
                       )

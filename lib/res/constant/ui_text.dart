@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:flutter/cupertino.dart';
 
 class AppString {
@@ -18,7 +20,7 @@ class AppRow {
       Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+        children: const [
           Text(
             "Company",
             style: TextStyle(
@@ -110,11 +112,11 @@ class AppRow {
           ),
         ],
       ),
-      SizedBox(width: 25),
+      const SizedBox(width: 25),
       Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+        children: const [
           Text(
             "Services",
             style: TextStyle(

@@ -4,12 +4,12 @@ import 'package:model_practice/res/constant/ui_text.dart';
 class AppButton {
   static ElevatedButton buttonOne = ElevatedButton(
     onPressed: () {},
-    style: ButtonStyle(
+    style: const ButtonStyle(
       backgroundColor: MaterialStatePropertyAll(
         Color(0xFFFFFFFF),
       ),
     ),
-    child: Text(
+    child: const Text(
       AppString.buttontext,
       style: TextStyle(
         color: Color(0xFF101828),
